@@ -7,6 +7,7 @@ export const Colors = {
   BLUE: "#009DD6",
   PURPLE: "#7944BB",
   GREY: "#F5F6FC",
+  DARK_GREY: "#333333",
 };
 
 export const FontSizes = {

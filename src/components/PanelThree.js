@@ -37,6 +37,7 @@ const CustomSlider = withStyles({
   },
   active: {},
   valueLabel: {
+    display: "none",
     left: "calc(-50% + 4px)",
   },
   track: {
@@ -45,7 +46,11 @@ const CustomSlider = withStyles({
   },
   rail: {
     height: 8,
-    borderRadius: 4,
+    borderRadius: 4,  },
+
+  markLabel: {
+    color: Colors.WHITE,
+    fontSize: "16px",
   },
 })(Slider);
 
@@ -92,6 +97,14 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover": {
       cursor: "pointer",
+    },
+  },
+  statement: {
+    backgroundColor: Colors.DARK_GREY,
+    padding: "20px",
+    borderRadius: "10px",
+    "& p": {
+      margin: 0,
     },
   },
 }));
@@ -149,7 +162,9 @@ export default function PanelThree() {
         ) : (
           <>
             <p>How would you rate your investment knowledge?</p>
-            <p>{investmentKnowledge}</p>
+            <div className={cls.statement}>
+              <p>{investmentKnowledge}</p>
+            </div>
             <div>
               <CustomSlider
                 valueLabelDisplay="auto"
