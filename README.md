@@ -1,3 +1,5 @@
+Built for S:\Hacks 2020
+
 # ScotiaRise
 
 Personalized news, recommendations, making sure that you’re making the best choices with your money. ScotiaRise is the ultimate tool to help you plan your future.
