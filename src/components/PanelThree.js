@@ -1,12 +1,9 @@
 import React, { useContext, useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Colors } from "../constants";
-import CInput from "./CInput";
 import CButton from "./CButton";
 import { store, actions } from "../store";
-import useFormInput from "../hooks/useFormInput";
 import Slider from "@material-ui/core/Slider";
-import Tooltip from "@material-ui/core/Tooltip";
 
 const marks = [
   {
@@ -100,13 +97,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PanelThree() {
-  const firstName = useFormInput("");
   const cls = useStyles();
   const [step, setStep] = useState(0);
   const [reason, setReason] = useState("Education");
   const [investmentKnowledge, setInvestmentKnowledge] = useState(marks[1].str);
 
-  const { state, dispatch } = useContext(store);
+  const { dispatch } = useContext(store);
 
   function next() {
     if (step === 0) {

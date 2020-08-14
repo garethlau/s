@@ -1,12 +1,8 @@
 import React, { useState, useContext } from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Colors } from "../constants";
-import CInput from "./CInput";
 import CButton from "./CButton";
 import { store, actions } from "../store";
-import useFormInput from "../hooks/useFormInput";
-import Slider from "@material-ui/core/Slider";
-import Tooltip from "@material-ui/core/Tooltip";
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({

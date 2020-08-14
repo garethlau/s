@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { store, actions } from "../store";
+import { store } from "../store";
 import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../components/Footer";
 
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Home() {
-  const { state, dispatch } = useContext(store);
+  const { state } = useContext(store);
 
   const cls = useStyles();
   return (

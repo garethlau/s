@@ -33,9 +33,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PanelOne() {
-  const { state, dispatch } = useContext(store);
+  const { dispatch } = useContext(store);
   function nextPage() {
-    dispatch({type: actions.NEXT_PAGE});
+    dispatch({ type: actions.NEXT_PAGE });
   }
   const cls = useStyles();
   return (

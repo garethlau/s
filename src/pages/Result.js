@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Colors } from "../constants";
-import { store, actions } from "../store";
+import { store } from "../store";
 import qs from "query-string";
 import CButton from "../components/CButton";
 
@@ -83,7 +83,7 @@ export default function Result() {
     setResult(id);
   }, []);
 
-  const { state, dispatch } = useContext(store);
+  const { state } = useContext(store);
   const cls = useStyles();
   return (
     <div>
