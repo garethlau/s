@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Result = React.lazy(() => import("./pages/Result"));
+const Landing = React.lazy(() => import("./pages/Landing"));
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <Switch>
           <Suspense fallback={null}>
-            <Route path="/" exact component={Home} />
+            <Route path="/" exact component={Landing} />
+            <Route path="/onboard" component={Home} />
             <Route path="/result" component={Result} />
           </Suspense>
         </Switch>
