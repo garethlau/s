@@ -106,6 +106,7 @@ const useStyles = makeStyles((theme) => ({
     "& p": {
       margin: 0,
     },
+    marginBottom :"30px"
   },
 }));
 
