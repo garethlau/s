@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 
 const initialState = {
-  page: 1,
+  page: 0,
   firstName: "",
   age: "",
   primaryReason: "",
