@@ -99,6 +99,8 @@ export default function Result() {
           text="Get Started"
           textColor={Colors.WHITE}
           backgroundColor={Colors.RED}
+          href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading/open-an-account.html"
+          target="_blank"
         />
       </div>
       <div className={cls.recommendations}>
@@ -112,15 +114,19 @@ export default function Result() {
             <h2>ScotiaRise Insight</h2>
             <p>{results[result].insight}</p>
             <CButton
-              text="See on iTrade"
+              text="See on iTRADE"
               backgroundColor={Colors.RED}
               textColor={Colors.WHITE}
+              href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading/open-an-account.html"
+              target="_blank"
             />
             <OutlineButton
               text="Add to Watchlist"
               textColor={Colors.RED}
               backgroundColor={Colors.WHITE}
               style={{ marginLeft: "30px" }}
+              href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading/open-an-account.html"
+              target="_blank"
             />
           </div>
         ) : (
@@ -138,6 +144,8 @@ export default function Result() {
           text="Register"
           textColor={Colors.WHITE}
           backgroundColor={Colors.RED}
+          href="https://www.scotiaitrade.com/en/direct-investing-and-online-trading/open-an-account.html"
+          target="_blank"
         />
       </div>
       <Footer />
