@@ -25,6 +25,15 @@ const useStyles = makeStyles((theme) => ({
   },
   right: {
     backgroundColor: Colors.PINK,
+    position: "relative",
+    height: "100%",
+    width: "100%",
+    "& img": {
+      position: "absolute",
+      left: 0,
+      bottom: 0,
+      height: "calc(70vh)",
+    },
   },
   logo: {
     width: "200px",
